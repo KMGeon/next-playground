@@ -1,9 +1,6 @@
 import React from 'react';
+import {redirect} from "next/navigation";
 
-export default function Home() {
-    return (
-        <div>
-            homePageㄹㅇㄴ
-        </div>
-    );
+export default function Login(){
+    redirect('/i/flow/login');
 }

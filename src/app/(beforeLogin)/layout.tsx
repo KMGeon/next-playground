@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
+import styles from '@/app/page.module.css';
 
-export default function AfterLoginLayout({children}) {
+type Props = {children: ReactNode, modal: ReactNode}
+export default function AfterLoginLayout({children, modal}: Props) {
     return (
-        <div>
-            애프터 로그인 레이아웃
+        <div className={styles.container}>
             {children}
+            {modal}
         </div>
     );
 }
