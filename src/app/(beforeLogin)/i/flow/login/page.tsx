@@ -1,14 +1,13 @@
-import React from 'react';
-import styles from "./page.module.css";
+"use client";
 
+import LoginModal from "@/app/(beforeLogin)/_component/LoginModal";
+import {redirect, useRouter} from "next/navigation";
 
-
-export default function Home() {
+export default function Page() {
     return (
-        <div>
-            {/*<main className={styles.login}>*/}
-                로그인 모달
-            {/*</main>*/}
-        </div>
-    );
+        <LoginModal/>
+    )
 }
+
+// router push 뒤로가기 하면 바로 뒤에
+//router replace 뒤로가기 하면 바로 뒤에 뒤에
