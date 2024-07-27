@@ -1,6 +1,7 @@
 "use client";
 import style from './tab.module.css';
 import {useState} from "react";
+import {useSearchParams} from "next/navigation";
 
 export default function Tab() {
   const [tab, setTab] = useState('rec');
