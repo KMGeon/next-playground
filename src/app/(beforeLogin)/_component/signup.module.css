@@ -16,7 +16,7 @@
     }
 }
 .modal {
-    background-color: white;
+    background-color: rgb(var(--background-end-rgb));
     position: relative;
     top: 5%;
     max-width: 80vw;
@@ -104,6 +104,9 @@
 }
 .actionButton:disabled {
     opacity: 0.5;
+}
+.actionButton:disabled:hover {
+    background-color: rgb(15, 20, 25);
 }
 .actionButton:hover {
     background-color: rgb(39,44,48);

@@ -1,11 +1,12 @@
-import React from 'react';
-import {redirect} from "next/navigation";
-import MainComponent from "@/app/(beforeLogin)/_component/MainComponent";
+"use client";
 
-/**
- * page
- */
-export default function Login(){
-    redirect('/i/flow/login');
+import {useRouter} from "next/navigation";
+import Main from "@/app/(beforeLogin)/_component/Main";
 
+export default function Login() {
+  const router = useRouter();
+  router.replace('/i/flow/login');
+  return (
+    <Main/>
+  );
 }

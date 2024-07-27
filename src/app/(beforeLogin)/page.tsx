@@ -1,10 +1,7 @@
-import MainComponent from "@/app/(beforeLogin)/_component/MainComponent";
+import Main from "@/app/(beforeLogin)/_component/Main";
 
-export default function Main() {
-    return (
-        <div>
-            <MainComponent/>
-        </div>
-
-    )
+export default function Home() {
+  return (
+    <Main />
+  )
 }
